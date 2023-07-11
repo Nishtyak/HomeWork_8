@@ -68,11 +68,10 @@ void FillArraySpiral2(int[,] array)
     int jMax = array.GetLength(1) - 1;
     int element = 1;
 
-    while (iMin < iMax && jMin < jMax)
+    while (iMin <= iMax && jMin <= jMax)
     {
         for (int j = jMin; j <= jMax; j++)
         {
-            Console.WriteLine($"{iMin}, {j}");
             array[iMin, j] = element++;    
         }
         iMin++;
