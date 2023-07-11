@@ -8,7 +8,6 @@
 int m = EnterNumberInt("Введите количество строк: ");
 int n = EnterNumberInt("Введите количество столбцов: ");
 int[,] array = new int[n, m];
-PrintArray(array);
 //FillArraySpiral(0, 0, 1);
 FillArraySpiral2(array);
 PrintArray(array);
